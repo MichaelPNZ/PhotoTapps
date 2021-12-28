@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		575C5539277B6D0300671657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C5538277B6D0300671657 /* AppDelegate.swift */; };
 		575C553B277B6D0300671657 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C553A277B6D0300671657 /* SceneDelegate.swift */; };
-		575C553D277B6D0300671657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C553C277B6D0300671657 /* ViewController.swift */; };
 		575C5540277B6D0300671657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575C553E277B6D0300671657 /* Main.storyboard */; };
 		575C5542277B6D0500671657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575C5541277B6D0500671657 /* Assets.xcassets */; };
 		575C5545277B6D0500671657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575C5543277B6D0500671657 /* LaunchScreen.storyboard */; };
+		575C554D277B6D8700671657 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C554C277B6D8700671657 /* PhotosCollectionViewController.swift */; };
+		575C554F277B709F00671657 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C554E277B709F00671657 /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		575C5535277B6D0300671657 /* PhotoTapps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTapps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		575C5538277B6D0300671657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		575C553A277B6D0300671657 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		575C553C277B6D0300671657 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		575C553F277B6D0300671657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		575C5541277B6D0500671657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		575C5544277B6D0500671657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		575C5546277B6D0500671657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575C554C277B6D8700671657 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		575C554E277B709F00671657 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				575C5538277B6D0300671657 /* AppDelegate.swift */,
 				575C553A277B6D0300671657 /* SceneDelegate.swift */,
-				575C553C277B6D0300671657 /* ViewController.swift */,
 				575C553E277B6D0300671657 /* Main.storyboard */,
+				575C554C277B6D8700671657 /* PhotosCollectionViewController.swift */,
+				575C554E277B709F00671657 /* PhotoCell.swift */,
 				575C5541277B6D0500671657 /* Assets.xcassets */,
 				575C5543277B6D0500671657 /* LaunchScreen.storyboard */,
 				575C5546277B6D0500671657 /* Info.plist */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				575C553D277B6D0300671657 /* ViewController.swift in Sources */,
+				575C554F277B709F00671657 /* PhotoCell.swift in Sources */,
 				575C5539277B6D0300671657 /* AppDelegate.swift in Sources */,
 				575C553B277B6D0300671657 /* SceneDelegate.swift in Sources */,
+				575C554D277B6D8700671657 /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
